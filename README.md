@@ -1,2 +1,0 @@
-# facebooksentiment
-Group project
