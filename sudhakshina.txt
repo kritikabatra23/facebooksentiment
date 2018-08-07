@@ -1,3 +1,0 @@
-#facebook-sentiment
-#group project
-#hello hello
