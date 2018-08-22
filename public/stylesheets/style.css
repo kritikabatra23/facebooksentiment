@@ -1,0 +1,13 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+
+#headerImg {
+ opacity:1;
+}
+:root {
+ --lightgrey: #707070;
+ --lightyellow: #FCFFA2;
+ --gridColor: #D7CACA;
+}
