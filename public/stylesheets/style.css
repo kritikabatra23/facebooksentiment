@@ -10,4 +10,22 @@
  --lightgrey: #707070;
  --lightyellow: #FCFFA2;
  --gridColor: #D7CACA;
+ --white: white;
 }
+
+#formPosition{
+  padding-bottom: 30px;
+}
+
+#mainContainer{
+  margin-top: 30px;
+}
+/*
+#formPosition{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+}
+#formBox{
+  position:relative;
+} */
