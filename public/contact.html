@@ -16,16 +16,26 @@
 </header>
 
 <!--*************************************** nav bar goes here ***********************************************************-->
-<nav class="navbar bg-dark navbar-dark nav-bills navbar-expand-sm">
+<nav class="navbar bg-dark navbar-dark navbar-expand-md">
   <div class="container">
-    <a class ="navbar-brand d-none d-sm-inline-block" href="#">Facebook Sentiment</a>
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" href="index.html">Home</a>
-        <a class="nav-item nav-link" href="project.html">Project</a>
-        <a class="nav-item nav-link" href="contact.html">Contact</a>
-    </div>
-  </div>
-</nav>
+    <button class ="navbar-toggler" type= "button" data-toggle = "collapse" data-target = "#myCollapse" aria-expanded="false" ariallabel = "taggle navigation">
+    </button>
+
+    <a class ="navbar-brand d-none d-md-inline-block" style = "color: var(--lightyellow);" href="#">Facebook Sentiment</a>
+
+    <div class = "collapse navbar-collapse" id="myCollapse">
+      <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link disabled" href="project.html">Project</a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
+      </div><!-- navbar-->
+    </div><!-- collapse-->
+
+    <div class="navbar-nav justify-content-end">
+        <a class="nav-item nav-link" href="login.html">Login</a>
+        <h3 class = "d-none d-md-inline-block">|</h3>
+        <a class="nav-item nav-link" href="register.html">Register</a>
+    </div><!-- navbar-->
 
 
 <!--*************************************** contact information goes here***********************************************************-->

@@ -6,8 +6,9 @@
 		"start": "node app.js"
 	},
 	"dependencies": {
-		"express": "4.15.x",
-		"cfenv": "1.0.x"
+		"@cloudant/cloudant": "^2.3.0",
+		"cfenv": "1.0.x",
+		"express": "4.15.x"
 	},
 	"repository": {},
 	"engines": {

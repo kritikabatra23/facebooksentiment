@@ -4,7 +4,7 @@ function checkSubmit()
 {
 	if(checkUsername()&&checkPassword()&&checkEmail())
 	{
-		window.location.href='customer-orders.php';
+		saveUser();
 	}
 	else
 	{

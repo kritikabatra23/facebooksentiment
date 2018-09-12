@@ -15,7 +15,7 @@
 <!--************************************Nav bar goes here******************************-->
   <nav class="navbar bg-dark navbar-dark navbar-expand-md">
     <div class="container">
-      <a class ="navbar-brand d-none d-md-inline-block"  href="#">Facebook Sentiment</a>
+      <a class ="navbar-brand d-none d-md-inline-block"  href="index.html">Facebook Sentiment</a>
     </div><!-- container -->
   </nav>
 
@@ -29,26 +29,30 @@
     <form id= formPosition action="form_main.html">
 
       <!-- log in with facebook -->
-      <div class="form-group">
+      <!-- <div class="form-group">
         <a id="logFace" href="#">Log In With Facebook</a>
-      </div>
+      </div> -->
       <!-- email address -->
         <div class="form-group">
-          <label class="form-control-label" for="useremail">Email address</label>
+          <label class="form-control-label" for="useremail" id="loginEmail">Email address</label>
           <input class="form-control" type="email" id="useremail" aria-describedby="emailHelp" placeholder="Enter email" >
         </div>
 
         <!-- password -->
         <div class="form-group">
-          <label class="form-control-label" for="password">Password</label>
+          <label class="form-control-label" for="password" id="loginPassword">Password</label>
           <!-- password cannot be seen -->
           <input class="form-control" type="password" id="password" placeholder="Your Password" >
           <!-- password can be seen when click on the box -->
           <input type="checkbox" onclick="showPassword()">Show Password
         </div>
-      <button id="logButton" type="submit">Submit</button>
+      <button id="logButton" type="submit" onclick="userLogin()">Submit</button>
     </form>
+    <div class=pb-3>
+      <p>Do not have an account? Please <a href="register.html" >sign up</a> here.</p>
+    </div>
   </div>
+
 
 
 
