@@ -7,8 +7,12 @@
 	},
 	"dependencies": {
 		"@cloudant/cloudant": "^2.3.0",
+		"body-parser": "^1.18.3",
 		"cfenv": "1.0.x",
-		"express": "4.15.x"
+		"chart.js": "^2.7.2",
+		"dotenv": "^6.0.0",
+		"express": "4.15.x",
+		"nodemon": "^1.18.4"
 	},
 	"repository": {},
 	"engines": {

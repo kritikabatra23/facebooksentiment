@@ -44,37 +44,27 @@
     </div><!-- container -->
   </nav>
 
-      <!--*************************************** this is the form of posts ****************************************-->
-  <div class="container" id="mainContainer" style ="background-color: var(--gridColor);">
-      <form action = "/result" method = "POST" id="formPosition">
-        <div class="form-group">
-          <p class="h5 text-primary">
-            Enter all the facebook posts here(joined together) Minimum must be total 100 words. A sample collection is given below
-          </p>
-        </div>
-
-        <div class="form-group">
-          <p>
-            <textarea class="form-control" rows="4" cols="50" name="posts">
-          I am feeling very sad.
-          This has been a very bad day till now.
-          Wohooooooooo!! my team won today.
-          the music by Eminem is awesome. Recovery album is the best.
-          Love lies in those unsent drafts in your mailbox. Sometimes you wonder whether things would have been different if you'd clicked 'Send'.
-          Walking alone is not difficult but when we have walked a mile worth a thousand years with someone then coming back alone is what is difficult.
-          Some people are going to leave, but that's not the end of your story. That's the end of their part in your story.
-          There is no disguise which can hide love for long where it exists, or simulate it where it does not.
-            </textarea>
-          </p>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-  </div>
+  <!--*************************************** this is the form of posts ****************************************-->
+<div class="container" id="mainContainer" style ="background-color: var(--gridColor);">
+<!-- <form action = "/result" method = "POST" id="formPosition"> -->
+<form action = "result_display" method="post">
+   Select the user whose posts you want to fetch <br />
+   <select name='user'>
+   <option value="test_user_adventurous">Adventurous profile test user</option>
+   <option value="test_user_friendly">Friendly profile test user</option>
+   <option value="test_user_temperamental">Temperamental profile test user</option>
+   <option value="test_user_mindful">Mindful profile test user</option>
+   </select>
+   <p><input type = "submit" value = "Fetch results" /></p>
+</form>
+</div>
 
 
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
 </body>
 </html>

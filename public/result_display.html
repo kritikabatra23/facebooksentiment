@@ -46,20 +46,24 @@
 
 <!--******************************************* the result context goes here ****************************************-->
   <div class="container" style ="background-color: var(--light);">
-      <h3>Personality analysis results : </h3>
-      <br />
-      <div class="d-flex flex-column align-items-center">
-        <table border = 1>
-           {% for key, value in result.items() %}
-
-              <tr>
-                 <th> {{ key }} </th>
-                 <td> {{ value }} </td>
-              </tr>
-
-           {% endfor %}
-        </table>
+      <table>
+        <tr>
+        <td>
+      <div id="canvas-holder" style="width:600px">
+  		    <canvas id="myChart"></canvas>
+  	 </div>
+        </td>
+        <td>
+      <div id="posts-holder" >
+          {{posts}}
       </div>
-    </div><!--container -->
+        </td>
+        </tr>
+      </table>
+      <h4> Prediction : {{prediction}}</h4>
+  </div><!--container -->
+
+    <script src="js/Chart.js"></script>
+    <script src="js/piChart.js"></script>
    </body>
 </html>
