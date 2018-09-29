@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title>Sign In</title>
+</head>
+<body id = "loginBackground">
+
+<!--************************************Nav bar goes here******************************-->
+  <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+    <div class="container">
+      <a class ="navbar-brand d-none d-sm-inline-block"  href="index.html">
+        <img class="rounded-circle" src="img/logo.jpg" style="width: 40px;" alt="Facebook Sentiment Logo">
+      </a>
+    </div><!-- container -->
+  </nav>
+
+<!-- *********************************This is the backgroud part*************************-->
+<div class="d-flex flex-column  justify-content-center">
+
+<!-- ******************************This is the welcome sentence ****************************-->
+  <div>
+    <h2 class = "text-light text-center">Welcome! Please sign in</h2>
+  </div>
+
+<!-- 0*******************************************this is the form*********************************  -->
+
+  <div id="formBox" style ="background-color: var(--light);" class="container w-50 ">
+    <form id= formPosition action="form_main.html">
+
+      <!-- log in with facebook -->
+      <!-- <div class="form-group">
+        <a id="logFace" href="#">Log In With Facebook</a>
+      </div> -->
+      <!-- email address -->
+        <div class="form-group">
+          <label class="form-control-label" for="useremail" id="loginEmail">Email address</label>
+          <input class="form-control" type="email" id="useremail" aria-describedby="emailHelp" placeholder="Enter email" >
+        </div>
+
+        <!-- password -->
+        <div class="form-group">
+          <label class="form-control-label" for="password" id="loginPassword">Password</label>
+          <!-- password cannot be seen -->
+          <input class="form-control" type="password" id="password" placeholder="Your Password" >
+          <!-- password can be seen when click on the box -->
+          <input type="checkbox" onclick="showPassword()">Show Password
+        </div>
+      <button class="btn" id="logButton" type="submit" onclick="userLogin()">Submit</button>
+    </form>
+    <div class=pb-3>
+      <p>Do not have an account? Please <a href="register.html" >sign up</a> here.</p>
+    </div>
+  </div>
+</div><!--background-->
+
+
+
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/functions.js"></script>
+</body>
+</html>

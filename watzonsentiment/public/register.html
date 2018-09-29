@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title>Sign In</title>
+</head>
+<body id="loginBackground">
+
+<!--************************************Nav bar goes here******************************-->
+  <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+    <div class="container">
+      <a class ="navbar-brand d-none d-sm-inline-block"  href="index.html">
+        <img class="rounded-circle" src="img/logo.jpg" style="width: 40px;" alt="Facebook Sentiment Logo">
+      </a>
+  </nav>
+
+<!-- ******************************This is the welcome sentence ****************************-->
+  <div>
+    <h2 class = "text-light text-center">Welcome! Please sign up</h2>
+  </div>
+
+<!-- 0*******************************************this is the register form*********************************  -->
+  <div id="formBox" style ="background-color: var(--light);" class="container w-50 ">
+    <div id= formPosition >
+      <form action = "http://127.0.0.1:8080/add" method="post"></form>
+      <!-- user name  -->
+        <div class="form-group">
+          <label class="form-control-label" for="username">Username</label>
+          <input class="form-control" type="text" id="username"  placeholder="Enter User Name" onBlur="checkUsername()">
+          <small class="form-text text-danger" id="usernameError"  ></small>
+        </div>
+
+      <!-- email address -->
+        <div class="form-group">
+          <label class="form-control-label" for="useremail">Email address</label>
+          <input class="form-control" type="email" id="useremail" placeholder="Enter email" onBlur ="checkEmail()">
+          <small class="form-text text-danger" id="emailError"  ></small>
+        </div>
+
+        <!-- password -->
+        <div class="form-group">
+          <label class="form-control-label" for="password">Password</label>
+          <!-- password cannot be seen -->
+          <input class="form-control" type="password" id="password" placeholder="Your Password" onBlur="checkPassword()">
+          <small class="form-text text-danger" id="passwordError"  ></small>
+          <!-- password can be seen when click on the box -->
+          <input type="checkbox" onclick="showPassword()">Show Password
+        </div>
+      <button class="btn" id="logButton" type="submit" onclick="checkSubmit()" >Submit</button>
+      </form>
+    </div><!--form-->
+  </div>
+
+
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/functions.js"></script>
+<script src="js/register.js"></script>
+<script src="js/userInfo.js"></script>
+</body>
+</html>
