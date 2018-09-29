@@ -10,14 +10,19 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <title>Sign In</title>
 </head>
-<body style ="background-color: var(--lightgrey);">
+<body id = "loginBackground">
 
 <!--************************************Nav bar goes here******************************-->
   <nav class="navbar bg-dark navbar-dark navbar-expand-md">
     <div class="container">
-      <a class ="navbar-brand d-none d-md-inline-block"  href="index.html">Facebook Sentiment</a>
+      <a class ="navbar-brand d-none d-sm-inline-block"  href="index.html">
+        <img class="rounded-circle" src="img/logo.jpg" style="width: 40px;" alt="Facebook Sentiment Logo">
+      </a>
     </div><!-- container -->
   </nav>
+
+<!-- *********************************This is the backgroud part*************************-->
+<div class="d-flex flex-column  justify-content-center">
 
 <!-- ******************************This is the welcome sentence ****************************-->
   <div>
@@ -25,6 +30,7 @@
   </div>
 
 <!-- 0*******************************************this is the form*********************************  -->
+
   <div id="formBox" style ="background-color: var(--light);" class="container w-50 ">
     <form id= formPosition action="form_main.html">
 
@@ -46,12 +52,13 @@
           <!-- password can be seen when click on the box -->
           <input type="checkbox" onclick="showPassword()">Show Password
         </div>
-      <button id="logButton" type="submit" onclick="userLogin()">Submit</button>
+      <button class="btn" id="logButton" type="submit" onclick="userLogin()">Submit</button>
     </form>
     <div class=pb-3>
       <p>Do not have an account? Please <a href="register.html" >sign up</a> here.</p>
     </div>
   </div>
+</div><!--background-->
 
 
 

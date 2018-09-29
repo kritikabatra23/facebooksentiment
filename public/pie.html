@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <title>Facebook Sentiment</title>
+</head>
+<body style ="background-color: var(--lightgrey);">
+
+<!--*************************************** head picture goes here ***********************************************************-->
+<header id = "headerImg" class="clearfix mb-0" style="height: 50vh; background: url(img/heading.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px; background-color: black;">
+</header>
+<!-- <header id = "headerImg" class="jumbotron" >
+  <img class= "d-flex mx-auto" src="img/heading.jpg"  alt="head image">
+</header> -->
+
+<!--*************************************** nav bar goes here ***********************************************************-->
+<nav class="navbar bg-dark navbar-dark navbar-expand-md">
+  <div class="container">
+    <button class ="navbar-toggler" type= "button" data-toggle = "collapse" data-target = "#myCollapse" aria-expanded="false" ariallabel = "taggle navigation">
+    </button>
+
+    <a class ="navbar-brand d-none d-md-inline-block" style = "color: var(--lightyellow);" href="#">Facebook Sentiment</a>
+
+    <div class = "collapse navbar-collapse" id="myCollapse">
+      <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link disabled" href="form_main.html">Analyze</a>
+         
+      </div><!-- navbar-->
+    </div><!-- collapse-->
+
+    <div class="navbar-nav justify-content-end">
+        <a class="nav-item nav-link" href="login.html">Login</a>
+        <h3 class = "d-none d-md-inline-block">|</h3>
+        <a class="nav-item nav-link" href="register.html">Register</a>
+    </div><!-- navbar-->
+
+  </div><!-- container -->
+</nav>
+
+<div id="canvas-holder" style="width:600px">
+    <canvas id="myChart"></canvas>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js">
+
+data = {
+   labels: ['Extraversion_parent','Openness','Artistic interests',
+			'Emotionality','Imagination','Intellect','Conscientiousness','Activity level',
+			'Cheerfulness','Agreeableness','Morality','Sympathy','Neuroticism','Anger','Anxiety',
+            'Depression'],
+            
+            datasets: [
+                {
+                    data: {chartData} ,
+                    backgroundColor: [
+                'rgba(255,255,0,1)',
+                'rgba(0, 255, 255, 1)',
+                'rgba(128, 0,0, 1)',
+                'rgba(0, 255, 0, 1)',
+                'rgba(0,128,0,1)',
+                'rgba(0, 128, 128, 1)',
+                'rgba(0, 255,255, 1)',
+                'rgba(128, 0, 128, 1)',
+                'rgba(128,0,0,1)',
+                'rgba(128, 128, 0, 1)',
+                'rgba(255, 0,255, 1)',
+                'rgba(128, 128, 128, 1)',
+                'rgba(255,0,0,1)',
+                'rgba(255, 255, 0, 1)',
+                'rgba(255, 0,255, 1)',
+
+                'rgba(255, 255, 255, 1)']                   
+                }
+            ],
+            
+        };
+
+
+
+
+        var ctx = document.getElementById("myChart").getContext("2d");
+        
+        var myNewChart = new Chart(ctx , {
+	type: "doughnut",
+    data: data
+});
+    </script>
+</body>
+</html>
+       
+        
+    

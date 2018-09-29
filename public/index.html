@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <title>Facebook Sentiment</title>
 </head>
-<body style ="background-color: var(--lightgrey);">
+<body style ="background-color: var(--background);">
 
 <!--*************************************** head picture goes here ***********************************************************-->
 <header id = "headerImg" class="clearfix mb-0" style="height: 50vh; background: url(img/heading.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px; background-color: black;">
@@ -25,13 +25,14 @@
     <button class ="navbar-toggler" type= "button" data-toggle = "collapse" data-target = "#myCollapse" aria-expanded="false" ariallabel = "taggle navigation">
     </button>
 
-    <a class ="navbar-brand d-none d-md-inline-block" style = "color: var(--lightyellow);" href="#">Facebook Sentiment</a>
+    <a class ="navbar-brand d-none d-sm-inline-block"  href="#">
+      <img class="rounded-circle" src="img/logo.jpg" style="width: 40px;" alt="Facebook Sentiment Logo">
+    </a>
 
     <div class = "collapse navbar-collapse" id="myCollapse">
       <div class="navbar-nav">
           <a class="nav-item nav-link" href="index.html">Home</a>
-          <a class="nav-item nav-link disabled" href="project.html">Project</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
+          <a class="nav-item nav-link" href="form_main.html">Analyze</a>
       </div><!-- navbar-->
     </div><!-- collapse-->
 
@@ -44,7 +45,7 @@
   </div><!-- container -->
 </nav>
 <!--*************************************** the introduction of application ***********************************************************-->
-<div class="container bg-color=white" style ="background-color: var(--gridColor);">
+<div class="bg-color=white" style ="background-color: var(--text);">
   <div class="container pb-3">
     <h3 class="text-primary">Project Description</h3>
     <blockquote class="blockquote text-justify">
@@ -67,10 +68,7 @@
   </div><!-- inner container -->
 </div><!-- container -->
 
-<div class="container">
 
-  <h1 class="text-right text-dark">Facebook Sentiment</h1>
-</div><!-- container -->
 
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/jquery.slim.min.js"></script>

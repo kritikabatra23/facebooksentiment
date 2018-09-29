@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <title>Sign In</title>
 </head>
-<body style ="background-color: var(--lightgrey);">
+<body id="loginBackground">
 
 <!--************************************Nav bar goes here******************************-->
   <nav class="navbar bg-dark navbar-dark navbar-expand-md">
     <div class="container">
-      <a class ="navbar-brand d-none d-md-inline-block"  href="index.html">Facebook Sentiment</a>
-    </div><!-- container -->
+      <a class ="navbar-brand d-none d-sm-inline-block"  href="index.html">
+        <img class="rounded-circle" src="img/logo.jpg" style="width: 40px;" alt="Facebook Sentiment Logo">
+      </a>
   </nav>
 
 <!-- ******************************This is the welcome sentence ****************************-->
@@ -51,7 +52,7 @@
           <!-- password can be seen when click on the box -->
           <input type="checkbox" onclick="showPassword()">Show Password
         </div>
-      <button id="logButton" type="submit" onclick="checkSubmit()" >Submit</button>
+      <button class="btn" id="logButton" type="submit" onclick="checkSubmit()" >Submit</button>
     </div><!--form-->
   </div>
 
